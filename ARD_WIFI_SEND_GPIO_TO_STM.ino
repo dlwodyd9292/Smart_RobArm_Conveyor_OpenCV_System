@@ -97,6 +97,8 @@ void socketEvent()
     {
       digitalWrite(ON_PIN, HIGH);
       digitalWrite(OFF_PIN, LOW);
+      delay(1000);
+      digitalWrite(ON_PIN, LOW);
 
       Serial.print("pArray[2] : ");
       Serial.print(pArray[2]);
@@ -106,6 +108,8 @@ void socketEvent()
     {
       digitalWrite(ON_PIN, LOW);
       digitalWrite(OFF_PIN, HIGH); 
+      delay(1000);
+      digitalWrite(OFF_PIN, LOW);
       
       Serial.print("pArray[2] : ");
       Serial.print(pArray[2]);
